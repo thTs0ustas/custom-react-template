@@ -1,13 +1,13 @@
 {
 	"presets": [
-		"@babel/preset-typescript",
+		["@babel/preset-typescript", { "isTSX": true, "allExtensions": true }],
 		[
 			"@babel/preset-env",
 			{
 				"useBuiltIns": "usage",
-				"corejs": 3
+				"corejs": "3.25.2"
 			}
 		],
-		["@babel/preset-react", { "runtime": "automatic" }]
+		["@babel/preset-react", { "runtime": "automatic", "importSource": "react" }]
 	]
 }

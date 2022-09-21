@@ -3,18 +3,13 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: ['plugin:react/recommended', 'xo', 'prettier'],
-	overrides: [
-		{
-			extends: ['xo-typescript'],
-			files: ['*.ts', '*.tsx'],
-		},
-	],
+	extends: ['airbnb-typescript/base', 'prettier'],
 	parserOptions: {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
+		project: './tsconfig.eslint.json',
 	},
-	plugins: ['react'],
+	plugins: ['import'],
 	rules: {
 		indent: ['off'],
 		'react/react-in-jsx-scope': 'off',
@@ -22,6 +17,7 @@ module.exports = {
 		'@typescript-eslint/comma-dangle': 'off',
 		'@typescript-eslint/indent': ['off', 2],
 		'react/prop-types': 'off',
+		'import/extensions': 'off',
 	},
 	settings: {
 		react: {
