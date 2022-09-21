@@ -1,13 +1,21 @@
-const styles = {
-	textAlign: 'center' as const,
-	fontWeight: 900,
-	fontSize: 24,
-	color: '#000',
-	border: '1px solid #000',
-	borderRadius: 15,
-	backgroundColor: '#ff019f',
-};
+import './app.css';
 
-const App = () => <div style={styles}>Hello World</div>;
+const App = () => (
+	<div className="app">
+		<h1>A template for React</h1>
+		<h2>With:</h2>
+		<ul>
+			<li>Redux</li>
+			<li>Redux-Toolkit</li>
+			<li>Typescript</li>
+			<li>Eslint</li>
+			<li>Babel</li>
+			<li>Webpack</li>
+			<li>Husky</li>
+			<li>Lint Staged</li>
+			<li>Prettier</li>
+		</ul>
+	</div>
+);
 
 export default App;
