@@ -7,3 +7,12 @@
 	border-radius: 15px;
 	background-color: #ff019f;
 }
+ul {
+	padding-left: 25px;
+	text-align: left;
+}
+li {
+	text-align: left;
+	list-style: none;
+	text-decoration: none;
+}
