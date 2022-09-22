@@ -3,13 +3,13 @@ import {
 	createBrowserRouter,
 	createRoutesFromElements,
 	Route,
-	RouterProvider,
+	RouterProvider
 } from 'react-router-dom';
 import App from 'src/app';
 import './index.css';
 
 const root = ReactDom.createRoot(
-	document.getElementById('root') as HTMLDivElement,
+	document.getElementById('root') as HTMLDivElement
 );
 
 const rooter = createBrowserRouter(
@@ -23,8 +23,8 @@ const rooter = createBrowserRouter(
 			// 	}
 			// }}
 			// errorElement={<h1>404</h1>}
-		/>,
-	),
+		/>
+	)
 );
 
 root.render(<RouterProvider router={rooter} />);
