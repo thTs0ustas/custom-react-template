@@ -13,7 +13,18 @@ const root = ReactDom.createRoot(
 );
 
 const rooter = createBrowserRouter(
-	createRoutesFromElements(<Route path="/" element={<App />} />),
+	createRoutesFromElements(
+		<Route
+			path="/"
+			element={<App />}
+			// loader={async () => {
+			// 	if (new Date().getTime() % 2 === 0) {
+			// 		throw new Error();
+			// 	}
+			// }}
+			// errorElement={<h1>404</h1>}
+		/>,
+	),
 );
 
 root.render(<RouterProvider router={rooter} />);

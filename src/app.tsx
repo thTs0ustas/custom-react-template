@@ -7,6 +7,7 @@ const App = () => (
 		<ul>
 			<li>Redux</li>
 			<li>Redux-Toolkit</li>
+			<li>React-Router</li>
 			<li>Typescript</li>
 			<li>Eslint</li>
 			<li>Babel</li>
