@@ -28,5 +28,3 @@ const rooter = createBrowserRouter(
 );
 
 root.render(<RouterProvider router={rooter} />);
-
-// TODO: Add react-router
